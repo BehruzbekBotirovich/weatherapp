@@ -58,7 +58,7 @@ export default {
         return;
       }
       this.error = '';
-      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=6ccbd7ada9e96fd46b5207365e1391ab`)
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=b85f93da422aeb2e4f550a567bf45977`)
         .then(res => (this.info = res.data))
         .catch(error => {
           this.error = 'Error fetching data';
